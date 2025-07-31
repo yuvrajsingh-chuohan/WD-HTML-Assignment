@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: slideColor 3s infinite linear;
+}
+
+@keyframes slideColor {
+  0% {
+    left: 0;
+    background-color: red;
+  }
+  50% {
+    left: 80vw;
+    background-color: blue;
+  }
+  100% {
+    left: 0;
+    background-color: red;
+  }
+}

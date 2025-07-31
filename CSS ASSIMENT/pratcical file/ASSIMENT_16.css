@@ -1,0 +1,54 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background: #1e90ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content, .sidebar {
+  padding: 20px;
+}
+
+/* Layout for larger screens */
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main sidebar"
+      "footer footer";
+  }
+
+  header { grid-area: header; }
+  .main-content { grid-area: main; }
+  .sidebar { grid-area: sidebar; }
+  footer { grid-area: footer; }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+  body {
+    display: block;
+  }
+
+  header, .main-content, .sidebar, footer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    background-color: #f0f0f0;
+  }
+
+  /* Optional: reduce font size on small screens */
+  body {
+    font-size: 14px;
+  }
+}

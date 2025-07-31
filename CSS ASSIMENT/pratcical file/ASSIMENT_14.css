@@ -1,0 +1,49 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1e90ff;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-item {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.feature-item i {
+  font-size: 2rem;
+  color: #1e90ff;
+  margin-right: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #e2e2e2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}

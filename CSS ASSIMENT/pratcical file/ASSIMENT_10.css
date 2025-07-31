@@ -1,0 +1,31 @@
+/* Style link states */
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+/* Style only the first line of paragraph */
+p::first-line {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* Decorative ::before element for headings */
+h1::before,
+h2::before {
+  content: "★ ";
+  color: gold;
+  font-size: 1.2em;
+}
